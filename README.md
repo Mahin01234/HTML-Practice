@@ -18,21 +18,19 @@ This repository contains my HTML practice files.
 
 
 ## 🚀 Topics Covered
-
 - HTML Basic Structure
 - Headings and Paragraphs
 - Text Formatting Tags
-  - <b>, <i>, <u>, <strong>, <em>
-  - <mark>, <small>, <del>, <ins>, <s>
+  - `<b>`, `<i>`, `<u>`, `<strong>`, `<em>`
+  - `<mark>`, `<small>`, `<del>`, `<ins>`, `<s>`
 - Semantic Tags
-  - <abbr>, <kbd>, <code>, <pre>
+  - `<abbr>`, `<kbd>`, `<code>`, `<pre>`
 - Lists
-  - Ordered List (<ol>)
-  - Unordered List (<ul>)
-- Links (<a>)
-- Images (<img>)
-- Line Break and Horizontal Line (<br>, <hr>)
+  - Ordered List (`<ol>`)
+  - Unordered List (`<ul>`)
+- Links (`<a>`)
+- Images (`<img>`)
+- Line Break and Horizontal Line (`<br>`, `<hr>`)
 
 ## 👨‍💻 Author
-
 Mahinur Rahman Mahin
