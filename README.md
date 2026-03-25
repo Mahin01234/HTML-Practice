@@ -9,7 +9,7 @@
 # HTML Practice Files
 This repository contains my HTML practice files.
 
-## 📂 Files
+## Files
 - index_3.html
 - practice_1.html
 - practice_2.html
@@ -17,7 +17,7 @@ This repository contains my HTML practice files.
 - practice_4.html
 
 
-## 🚀 Topics Covered
+## Topics Covered
 - HTML Basic Structure
 - Headings and Paragraphs
 - Text Formatting Tags
@@ -32,5 +32,5 @@ This repository contains my HTML practice files.
 - Images (`<img>`)
 - Line Break and Horizontal Line (`<br>`, `<hr>`)
 
-## 👨‍💻 Author
+## Author
 Mahinur Rahman Mahin
