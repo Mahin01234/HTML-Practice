@@ -16,15 +16,22 @@ This repository contains my HTML practice files.
 - practice_3.html
 - practice_4.html
 
-## 🎯 Purpose
-I created these files to practice basic HTML tags and concepts.
 
 ## 🚀 Topics Covered
-- Basic HTML structure
-- Text formatting tags
+
+- HTML Basic Structure
+- Headings and Paragraphs
+- Text Formatting Tags
+  - <b>, <i>, <u>, <strong>, <em>
+  - <mark>, <small>, <del>, <ins>, <s>
+- Semantic Tags
+  - <abbr>, <kbd>, <code>, <pre>
 - Lists
-- Links
-- Semantic tags
+  - Ordered List (<ol>)
+  - Unordered List (<ul>)
+- Links (<a>)
+- Images (<img>)
+- Line Break and Horizontal Line (<br>, <hr>)
 
 ## 👨‍💻 Author
 
