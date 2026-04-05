@@ -79,9 +79,5 @@ This repository contains my HTML practice files, created as part of my learning 
 - **HTML Tutorial for Beginners**: [YouTube](https://youtu.be/HcOc7P5BMi4)
 - **HTML MCQ**: [YouTube](https://youtu.be/hddqkYK5eMQ)
 
-## Author
-
-**Mahinur Rahman Mahin**
-
-
 ---
+
