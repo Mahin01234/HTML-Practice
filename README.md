@@ -5,8 +5,8 @@ This repository contains my HTML practice files, created as part of my learning 
 ## Live Previews
 
 - **index_3.html**: [Live Preview](https://valid-aquamarine-pls3uichfu.edgeone.app/)
-- **Practice_1**: [Live Preview](https://ripe-sapphire-8kirfnccvr.edgeone.app/)
-- **Practice_2**: [Live Preview](https://mushy-lavender-xdks2hur4s.edgeone.app/)
+- **practice_1.html**: [Live Preview](https://ripe-sapphire-8kirfnccvr.edgeone.app/)
+- **practice_2.html**: [Live Preview](https://mushy-lavender-xdks2hur4s.edgeone.app/)
 - *Additional practice files can be viewed by opening them in a browser after cloning the repository.*
 
 ## Files
@@ -20,6 +20,8 @@ This repository contains my HTML practice files, created as part of my learning 
 | practice_4.html  | Tables (colspan, rowspan, thead, tfoot) and forms (all input types, validation) |
 | practice_5.html  | Multimedia: audio, video, iframe, `<figure>`, `<details>`, `<track>` |
 | practice_6.html  | HTML5 APIs: local storage, session storage, geolocation, drag & drop, canvas |
+| practice_7.html  | Responsive design with media queries, flexbox, and CSS Grid layout |
+| practice_8.html  | Advanced form handling, custom validation, and local storage integration |
 
 ## Topics Covered (by file)
 
@@ -58,6 +60,18 @@ This repository contains my HTML practice files, created as part of my learning 
 - **Drag and Drop**: Simple draggable element with drop target
 - **Canvas**: Basic drawing (rectangle, circle)
 
+### practice_7.html – Responsive Design
+- CSS Media Queries for mobile, tablet, and desktop
+- Flexbox layout (navigation bar, card layout)
+- CSS Grid for page structure
+- Responsive images with `max-width: 100%`
+
+### practice_8.html – Advanced Form & Storage
+- Custom form validation using HTML5 and JavaScript
+- Real-time input feedback
+- Saving form data to Local Storage
+- Retrieving and displaying saved data
+
 ## Additional Resources
 
 - **HTML Crash Course Bangla**: [YouTube](https://youtu.be/6AT4JV1dLPc)
@@ -67,11 +81,7 @@ This repository contains my HTML practice files, created as part of my learning 
 
 ## Author
 
-Mahinur Rahman Mahin
+**Mahinur Rahman Mahin**
 
-## How to Use
 
-1. Clone the repository:  
-   `git clone https://github.com/Mahin01234/HTML-Practice.git`
-2. Open any `.html` file in your web browser to see the output.
-3. Study the source code to understand how each element works.
+---
