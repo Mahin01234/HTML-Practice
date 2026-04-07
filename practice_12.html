@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- 1. <html> -->
+<html lang="en">
+<head>
+    <!-- 2. <head> -->
+    <!-- 3. <title> -->
+    <title>100 HTML Tags | Complete Showcase</title>
+    <!-- 4. <meta> (charset + viewport) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 5. <link> (external dummy favicon) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏷️%3C/text%3E%3C/svg%3E">
+    <!-- 6. <style> -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #f0f4f8; font-family: system-ui, 'Segoe UI', sans-serif; padding: 1.5rem; color: #1e2a2e; }
+        .card { background: white; border-radius: 2rem; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+        h1, h2 { color: #1e6f3f; margin-bottom: 0.75rem; }
+        h2 { border-left: 6px solid #2c8c5a; padding-left: 1rem; margin-top: 0.5rem; }
+        pre { background: #2d2f36; color: #f8f8f2; padding: 1rem; border-radius: 1rem; overflow-x: auto; }
+        code, kbd, samp, var { background: #eef2f5; padding: 0.2rem 0.4rem; border-radius: 8px; font-family: monospace; }
+        .flex-grid { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; align-items: center; }
+        button, .button-like { background: #2c8c5a; color: white; border: none; padding: 0.5rem 1rem; border-radius: 2rem; cursor: pointer; }
+        dialog { border: none; border-radius: 2rem; padding: 1.5rem; max-width: 90%; margin: auto; }
+        ::backdrop { background: rgba(0,0,0,0.5); }
+        footer { text-align: center; margin-top: 2rem; font-size: 0.8rem; color: #5a6e6e; }
+        hr { margin: 1rem 0; }
+        .demo-box { background: #f9f9f2; border-radius: 1rem; padding: 1rem; margin: 1rem 0; }
+    </style>
+    <!-- 7. <script> (initializes interactive parts) -->
+    <script>
+        function showDialog() {
+            document.getElementById('demoDialog').showModal();
+        }
+        function closeDialog() { document.getElementById('demoDialog').close(); }
+        // output example
+        function updateOutput() {
+            let rangeVal = document.getElementById('progressRange').value;
+            document.getElementById('liveOutput').innerText = `Volume: ${rangeVal}%`;
+            document.getElementById('meterSample').value = rangeVal;
+        }
+        window.onload = () => {
+            updateOutput();
+            // canvas drawing
+            const canvas = document.getElementById('demoCanvas');
+            if(canvas) {
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#c8e6df';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#2c8c5a';
+                ctx.beginPath();
+                ctx.arc(50, 50, 30, 0, 2*Math.PI);
+                ctx.fill();
+                ctx.fillStyle = '#ffd966';
+                ctx.beginPath();
+                ctx.arc(80, 40, 12, 0, 2*Math.PI);
+                ctx.fill();
+            }
+        };
+    </script>
+    <!-- 8. <base> (sets relative URL base) -->
+    <base href=".">
+    <!-- 9. <noscript> (fallback if JS disabled) -->
+    <noscript><div style="background:red;color:white;">JavaScript is disabled. Some features may not work.</div></noscript>
+</head>
+<!-- 10. <body> -->
+<body>
+
+<!-- 11. <header> -->
+<header class="card">
+    <h1>📄 100 HTML Tags – Complete Reference Demo</h1>
+    <p>Every tag from your list is used below, organised by category.</p>
+</header>
+
+<!-- 12. <nav> -->
+<nav class="card">
+    <a href="#text">Text</a> | <a href="#media">Media</a> | <a href="#lists">Lists</a> | <a href="#tables">Tables</a> | <a href="#forms">Forms</a> | <a href="#semantic">Semantic</a> | <a href="#interactive">Interactive</a> | <a href="#other">Other</a>
+</nav>
+
+<!-- ========== TEXT & HEADING ========== -->
+<section id="text" class="card">
+    <h2>📝 Text & Headings (11–20)</h2>
+    <h1>&lt;h1&gt; Heading level 1</h1>
+    <h2>&lt;h2&gt; Level 2</h2>
+    <h3>&lt;h3&gt; Level 3</h3>
+    <h4>&lt;h4&gt; Level 4</h4>
+    <h5>&lt;h5&gt; Level 5</h5>
+    <h6>&lt;h6&gt; Level 6</h6>
+    <p>&lt;p&gt; Paragraph with <br> &lt;br&gt; line break and <hr> &lt;hr&gt; horizontal rule.</p>
+    <pre>&lt;pre&gt;     Preserved
+  whitespace
+    and monospace.</pre>
+</section>
+
+<!-- ========== TEXT FORMATTING ========== -->
+<section class="card">
+    <h2>✨ Text Formatting (21–30)</h2>
+    <p><b>&lt;b&gt; bold</b>, <strong>&lt;strong&gt; strong importance</strong>, <i>&lt;i&gt; italic</i>, <em>&lt;em&gt; emphasised</em>, 
+    <mark>&lt;mark&gt; highlighted</mark>, <small>&lt;small&gt; small</small>, 
+    <del>&lt;del&gt; deleted</del>, <ins>&lt;ins&gt; inserted</ins>, 
+    H<sub>&lt;sub&gt; subscript</sub> and X<sup>&lt;sup&gt; superscript</sup>.</p>
+</section>
+
+<!-- ========== LINKS & MEDIA ========== -->
+<section id="media" class="card">
+    <h2>🔗 Links & Media (31–40)</h2>
+    <p><a href="#top">&lt;a&gt; anchor link (back to top)</a></p>
+    <figure>
+        <img src="https://picsum.photos/id/104/200/120" alt="Sample image" style="border-radius: 12px;">
+        <figcaption>&lt;img&gt; with &lt;figcaption&gt;</figcaption>
+    </figure>
+    <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">Your browser does not support &lt;audio&gt;.</audio>
+    <video width="320" controls poster="https://picsum.photos/id/20/320/180">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <track kind="subtitles" src="#" label="English">
+        &lt;track&gt; placeholder
+    </video>
+    <!-- map + area -->
+    <img src="https://picsum.photos/id/10/300/150" alt="workplace" usemap="#workmap" style="display:block; margin:1rem 0;">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,130" alt="Computer" href="#">
+        <area shape="circle" coords="240,80,30" alt="Coffee" href="#">
+    </map>
+    <picture>
+        <source srcset="https://picsum.photos/id/22/300/150" media="(min-width: 600px)">
+        <img src="https://picsum.photos/id/13/300/150" alt="responsive picture">
+    </picture>
+    <iframe src="https://www.w3schools.com" width="100%" height="200" title="iframe demo"></iframe>
+</section>
+
+<!-- ========== LISTS ========== -->
+<section id="lists" class="card">
+    <h2>📋 Lists (41–50)</h2>
+    <ul><li>Unordered list &lt;ul&gt; &lt;li&gt;</li></ul>
+    <ol><li>Ordered list &lt;ol&gt;</li></ol>
+    <dl>
+        <dt>&lt;dt&gt; term</dt>
+        <dd>&lt;dd&gt; definition</dd>
+    </dl>
+    <menu>
+        <menuitem label="&lt;menuitem&gt; (deprecated but included)"> </menuitem>
+        <li>Menu item</li>
+    </menu>
+    <dir> &lt;dir&gt; directory list (obsolete) <li>Item</li></dir>
+    <details>
+        <summary>&lt;summary&gt; (click to expand)</summary>
+        <p>Hidden content inside &lt;details&gt;.</p>
+    </details>
+</section>
+
+<!-- ========== TABLES ========== -->
+<section id="tables" class="card">
+    <h2>📊 Tables (51–60)</h2>
+    <table border="1" style="border-collapse:collapse; width:100%">
+        <caption>&lt;caption&gt;: Sample table</caption>
+        <colgroup><col style="background:#eef"><col style="background:#ffe"></colgroup>
+        <thead><tr><th>&lt;thead&gt; &lt;th&gt;</th><th>Score</th></tr></thead>
+        <tbody><tr><td>&lt;tbody&gt; &lt;td&gt;</td><td>95</td></tr></tbody>
+        <tfoot><tr><td colspan="2">&lt;tfoot&gt; footer</td></tr></tfoot>
+    </table>
+</section>
+
+<!-- ========== FORMS ========== -->
+<section id="forms" class="card">
+    <h2>📝 Forms (61–70)</h2>
+    <form onsubmit="alert('Form submitted (demo)'); return false;">
+        <fieldset>
+            <legend>&lt;legend&gt; inside &lt;fieldset&gt;</legend>
+            <label>&lt;label&gt; Name: <input type="text" placeholder="text input"></label><br>
+            <textarea rows="2" cols="30" placeholder="&lt;textarea&gt;"></textarea><br>
+            <button type="button" onclick="alert('Button clicked')">&lt;button&gt;</button>
+            <select>
+                <optgroup label="&lt;optgroup&gt;">
+                    <option>&lt;option&gt; 1</option>
+                    <option>2</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+</section>
+
+<!-- ========== SEMANTIC HTML ========== -->
+<section id="semantic" class="card">
+    <h2>🏗️ Semantic HTML (71–80)</h2>
+    <header>&lt;header&gt; (already used above)</header>
+    <nav>&lt;nav&gt; (navigation bar)</nav>
+    <section>&lt;section&gt; (this block)</section>
+    <article>&lt;article&gt;: <article class="demo-box">Self-contained content</article></article>
+    <aside>&lt;aside&gt;: <aside style="background:#eef2ea; padding:0.5rem;">Side note</aside></aside>
+    <footer>&lt;footer&gt; (page footer below)</footer>
+    <main>&lt;main&gt; (the main content – the whole page is inside main implicitly, but let's show)</main>
+    <figure>&lt;figure&gt; used above with img</figure>
+    <figcaption>&lt;figcaption&gt; used above</figcaption>
+    <details><summary>&lt;details&gt; &lt;summary&gt; (already shown in lists)</summary>Extra info.</details>
+</section>
+
+<!-- ========== INTERACTIVE & EMBEDDED ========== -->
+<section id="interactive" class="card">
+    <h2>🎮 Interactive & Embedded (81–90)</h2>
+    <button onclick="showDialog()">Open &lt;dialog&gt;</button>
+    <dialog id="demoDialog">
+        <p>This is a &lt;dialog&gt; element. <button onclick="closeDialog()">Close</button></p>
+    </dialog>
+    <canvas id="demoCanvas" width="150" height="100" style="border:1px solid #ccc; margin:1rem 0;"></canvas>
+    <embed type="image/svg+xml" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='green'/%3E%3C/svg%3E" width="80" height="80">
+    <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="200" height="100">
+        <param name="quality" value="high">&lt;param&gt;
+    </object>
+    <progress value="70" max="100">70%</progress>
+    <meter id="meterSample" value="0.5">50%</meter>
+    <time datetime="2025-03-20">March 20, 2025</time>
+    <output id="liveOutput">Volume: 50%</output>
+    <template id="myTemplate"><p>This is inside &lt;template&gt; (not rendered until used)</p></template>
+</section>
+
+<!-- ========== OTHER USEFUL TAGS ========== -->
+<section id="other" class="card">
+    <h2>🔧 Other Useful Tags (91–100)</h2>
+    <span>&lt;span&gt; inline container</span> and <div>&lt;div&gt; block container</div>
+    <p>Press <kbd>&lt;kbd&gt;Ctrl</kbd> + <kbd>C</kbd> to copy. Example: <code>&lt;code&gt;console.log()</code></p>
+    <samp>&lt;samp&gt; Sample output: Hello world</samp><br>
+    <var>&lt;var&gt; variable x</var> = 42<br>
+    <abbr title="HyperText Markup Language">&lt;abbr&gt;HTML</abbr><br>
+    <cite>&lt;cite&gt;The Great Gatsby</cite> by Fitzgerald<br>
+    <address>&lt;address&gt; contact@example.com</address>
+    <bdi>&lt;bdi&gt; ‭عربي 123</bdi> (isolated direction)
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="card">
+    <p>✅ All 100 HTML tags are present – from &lt;html&gt; to &lt;bdi&gt;. Each tag appears at least once.</p>
+    <p><small>Built as a complete reference. Some obsolete tags (&lt;menuitem&gt;, &lt;dir&gt;) are included for completeness.</small></p>
+</footer>
+
+<script>
+    // Additional JS to ensure <output> works with range slider
+    const range = document.getElementById('progressRange');
+    if(!document.getElementById('progressRange')){
+        // create a hidden range for output demo
+        let r = document.createElement('input');
+        r.type = 'range';
+        r.id = 'progressRange';
+        r.value = 50;
+        r.style.display = 'none';
+        document.body.appendChild(r);
+        r.addEventListener('input', updateOutput);
+        updateOutput();
+    }
+    // make sure all tags are counted: I have used every single one.
+</script>
+<!-- ensure <menuitem> is actually used: it's inside <menu> above. 
+     <dir> used. <base> used. <link> used. <noscript> used. -->
+</body>
+</html>
