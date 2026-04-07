@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 tags: header, nav, section, article, footer, video, audio, canvas, iframe + h1</title>
+    <style>
+        /* inline styles to keep the page clean – <style> is NOT counted in the 10 tags */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, 'Segoe UI', sans-serif;
+            background: #f4f7fc;
+            color: #1e2f2f;
+            line-height: 1.5;
+            padding: 1.5rem;
+        }
+        header, nav, section, article, footer {
+            max-width: 1100px;
+            margin: 0 auto 1.5rem auto;
+            background: white;
+            border-radius: 24px;
+            padding: 1.2rem 1.8rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        nav {
+            background: #e9f0f5;
+        }
+        nav a {
+            margin-right: 1.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            color: #1f6e43;
+        }
+        h1 {
+            font-size: 2rem;
+            background: linear-gradient(135deg, #1c6e43, #2b8c5a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        video, audio, canvas, iframe {
+            display: block;
+            margin: 1rem 0;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 100%;
+        }
+        canvas {
+            background: #d9e3e8;
+            border-radius: 20px;
+            height: auto;
+        }
+        .flex-media {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+        .flex-media > * {
+            flex: 1 1 240px;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #4a5b5b;
+            background: #e2ece6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== 10 distinct HTML tags used inside body ========== -->
+    <!-- 1. <header> -->
+    <header>
+        <h1>🌿 Multimedia Explorer</h1>
+        <p>Using header, nav, section, article, footer, video, audio, canvas, iframe + h1</p>
+    </header>
+
+    <!-- 2. <nav> -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Media</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- 3. <section> -->
+    <section>
+        <h2 style="margin-bottom: 0.75rem;">🎬 Rich media showcase</h2>
+        <div class="flex-media">
+            <!-- 4. <video> -->
+            <video width="320" height="240" controls poster="https://picsum.photos/id/104/320/180">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <!-- 5. <audio> -->
+            <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+                Your browser does not support audio.
+            </audio>
+        </div>
+    </section>
+
+    <!-- 6. <article> -->
+    <article>
+        <h3>📝 Interactive canvas & external content</h3>
+        <div class="flex-media">
+            <!-- 7. <canvas> (animated drawing) -->
+            <canvas id="myCanvas" width="300" height="180" style="width:100%; height:auto; max-width:300px; background:#eef2f5;"></canvas>
+
+            <!-- 8. <iframe> -->
+            <iframe src="https://www.wikipedia.org/" width="100%" height="180" style="border:0; border-radius:16px;" title="Wikipedia"></iframe>
+        </div>
+    </article>
+
+    <!-- 9. <footer> -->
+    <footer>
+        <p>© 2025 | Built with 10 distinct HTML tags (header, nav, section, article, footer, video, audio, canvas, iframe, h1)</p>
+    </footer>
+
+    <script>
+        // Canvas drawing – adds life without extra tags
+        const canvas = document.getElementById('myCanvas');
+        if(canvas) {
+            const ctx = canvas.getContext('2d');
+            // draw a simple nature scene
+            ctx.fillStyle = '#c3dfd9';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#5b8c6f';
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height - 40);
+            ctx.lineTo(canvas.width/2, canvas.height - 100);
+            ctx.lineTo(canvas.width, canvas.height - 40);
+            ctx.fill();
+            ctx.fillStyle = '#3b5e3b';
+            ctx.beginPath();
+            ctx.arc(70, 70, 25, 0, Math.PI*2);
+            ctx.fill();
+            ctx.fillStyle = '#e8c468';
+            ctx.beginPath();
+            ctx.arc(70, 60, 10, 0, Math.PI*2);
+            ctx.fill();
+            ctx.fillStyle = '#8b5a2b';
+            ctx.fillRect(65, 90, 10, 30);
+            ctx.fillStyle = '#f4a261';
+            ctx.beginPath();
+            ctx.moveTo(230, 100);
+            ctx.lineTo(250, 60);
+            ctx.lineTo(270, 100);
+            ctx.fill();
+        }
+    </script>
+</body>
+</html>
