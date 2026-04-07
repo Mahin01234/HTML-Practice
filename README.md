@@ -4,9 +4,9 @@ This repository contains my HTML practice files, created as part of my learning 
 
 ## Live Previews
 
-- **index_3.html**: [Live Preview](https://valid-aquamarine-pls3uichfu.edgeone.app/)
-- **practice_1.html**: [Live Preview](https://ripe-sapphire-8kirfnccvr.edgeone.app/)
-- **practice_2.html**: [Live Preview](https://mushy-lavender-xdks2hur4s.edgeone.app/)
+- **index_3.html (Main Page)**: [Live Preview](https://valid-aquamarine-pls3uichfu.edgeone.app/)
+- **practice_1.html (Basic HTML)**: [Live Preview](https://ripe-sapphire-8kirfnccvr.edgeone.app/)
+- **practice_2.html (Lists, Links & Images)**: [Live Preview](https://mushy-lavender-xdks2hur4s.edgeone.app/)
 - *Additional practice files can be viewed by opening them in a browser after cloning the repository.*
 
 ## Files
@@ -22,6 +22,10 @@ This repository contains my HTML practice files, created as part of my learning 
 | practice_6.html  | HTML5 APIs: local storage, session storage, geolocation, drag & drop, canvas |
 | practice_7.html  | Responsive design with media queries, flexbox, and CSS Grid layout |
 | practice_8.html  | Advanced form handling, custom validation, and local storage integration |
+| practice_9.html  | Blockquote, quotation tags, `<cite>`, `<address>`, mathematical formulas, chemical formulas, and advanced text formatting |
+| practice_10.html | Interactive form elements, custom input validation, and form submission handling with screenshot demo |
+| practice_11.html | Dynamic content manipulation, DOM events, and JavaScript integration with visual screenshot example |
+| practice_12.html | Multimedia integration with video embedding, custom video controls, and interactive media elements |
 
 ## Topics Covered (by file)
 
@@ -72,12 +76,51 @@ This repository contains my HTML practice files, created as part of my learning 
 - Saving form data to Local Storage
 - Retrieving and displaying saved data
 
+### practice_9.html – Blockquote & Quotation Tags
+- `<blockquote>` for long quotations
+- `<q>` for inline quotations
+- `<cite>` for citing sources
+- `<address>` for contact information
+- Mathematical formulas (e.g., (a+b)² = a² + 2ab + b²)
+- Chemical formulas (e.g., H₂SO₄, H₂O)
+- `<abbr>` for abbreviations
+- `<dfn>` for definitions
+
+### practice_10.html – Interactive Forms & Validation
+- Advanced form input types
+- Custom validation messages
+- Real-time form validation
+- Form data handling with JavaScript
+- Screenshot demo included (practice_10.png)
+- User feedback and error handling
+
+### practice_11.html – DOM Manipulation & Events
+- JavaScript DOM event handling
+- Dynamic content updates
+- Element creation and deletion
+- Event listeners (click, hover, input, submit)
+- Screenshot demo included (practice_11.png)
+- Interactive user interface components
+
+### practice_12.html – Video & Multimedia Integration
+- HTML5 video embedding (`<video>` tag)
+- Custom video player controls
+- Video playback events (play, pause, volume change)
+- Multiple video formats support (MP4, WebM, Ogg)
+- Poster images for video preview
+- Screenshot/video demo included (practice_12.mp4)
+- Responsive video design
+
 ## Additional Resources
 
 - **HTML Crash Course Bangla**: [YouTube](https://youtu.be/6AT4JV1dLPc)
 - **HTML Complete Course**: [YouTube](https://youtu.be/rklidcZ-aLU)
-- **HTML Tutorial for Beginners**: [YouTube](https://youtu.be/HcOc7P5BMi4)
+- **HTML Tutorial for Beginners**: [YouTube](https://youtu.be/HcO7cP5BMi4)
 - **HTML MCQ**: [YouTube](https://youtu.be/hddqkYK5eMQ)
 
 ---
+
+## About
+
+HTML practice files from my learning journey. Each file focuses on specific HTML concepts with practical examples.
 
