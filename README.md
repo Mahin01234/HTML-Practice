@@ -26,6 +26,8 @@ This repository contains my HTML practice files, created as part of my learning 
 | practice_10.html | Interactive form elements, custom input validation, and form submission handling with screenshot demo |
 | practice_11.html | Dynamic content manipulation, DOM events, and JavaScript integration with visual screenshot example |
 | practice_12.html | Multimedia integration with video embedding, custom video controls, and interactive media elements |
+| practice_13.html | A blue box, three red headings, and three buttons (green, blue, and pink) – where the button colors are applied using three different methods (external, style tag, inline). |
+
 
 ## Topics Covered (by file)
 
