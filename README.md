@@ -113,6 +113,20 @@ This repository contains my HTML practice files, created as part of my learning 
 - Screenshot/video demo included (practice_12.mp4)
 - Responsive video design
 
+### practice_13.html – box headings buttons
+- background-color – background color of an element
+- color – text color
+- padding – space inside the element (between content and border)
+- margin – space outside the element
+- border-radius – rounds the corners of an element
+- text-align – horizontal alignment of text (center, left, right, etc.)
+- font-size – size of the font
+- cursor: pointer – changes the mouse cursor to a pointer when hovering over a button
+- display: flex and gap – arranges child elements (buttons) side by side with spacing
+- border: none – removes the default border from buttons
+
+
+
 ## Additional Resources
 
 - **HTML Crash Course Bangla**: [YouTube](https://youtu.be/6AT4JV1dLPc)
